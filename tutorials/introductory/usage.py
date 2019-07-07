@@ -365,7 +365,7 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 # (backend ``GTK3Cairo``).
 #
 # For the rendering engines, one can also distinguish between `vector
-# <https://en.wikipedia.org/wiki/Vector_graphics>`_ or `raster
+# <https://en.wikipedia.org/wiki/Vector_graphics>`_ or `rastermeth
 # <https://en.wikipedia.org/wiki/Raster_graphics>`_ renderers.  Vector
 # graphics languages issue drawing commands like "draw a line from this
 # point to this point" and hence are scale free, and raster backends
@@ -388,6 +388,9 @@ my_plotter(ax2, data3, data4, {'marker': 'o'})
 # Cairo     png, ps,   raster_ or vector_ graphics -- using the Cairo_ library
 #           pdf, svg
 # ========  =========  =======================================================
+#
+# To save plots using the non-interactive backends, use the
+# ``matplotlib.pyplot.savefig('filename')`` method.
 #
 # And here are the user interfaces and renderer combinations supported;
 # these are *interactive backends*, capable of displaying to the screen
